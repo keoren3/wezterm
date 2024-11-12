@@ -9,16 +9,13 @@ config = {
 	font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Bold", stretch = "Normal", style = "Normal" }),
 	font_size = 13.0,
 	native_macos_fullscreen_mode = true,
-
-	background = {
-		{
-			source = {
-				File = "/Users/" .. os.getenv("USER") .. "/.config/wezterm/dystopian.jpg",
-			},
-			width = "100%",
-			height = "100%",
-			opacity = 0.50,
-		},
+	colors = {
+		background = "black",
+	},
+	window_background_image = "/Users/" .. os.getenv("USER") .. "/.config/wezterm/dystopian.jpg",
+	window_background_image_hsb = {
+		-- Darken the background image by reducing it to 1/3rd
+		brightness = 0.15,
 	},
 
 	keys = {
