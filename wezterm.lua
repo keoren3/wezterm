@@ -9,6 +9,8 @@ config = {
 	font = wezterm.font("FiraCode Nerd Font Mono", { weight = "Bold", stretch = "Normal", style = "Normal" }),
 	font_size = 13.0,
 	native_macos_fullscreen_mode = true,
+	enable_scroll_bar = true,
+	scrollback_lines = 350000,
 	colors = {
 		background = "black",
 	},
