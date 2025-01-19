@@ -11,14 +11,6 @@ config = {
 	native_macos_fullscreen_mode = true,
 	enable_scroll_bar = true,
 	scrollback_lines = 350000,
-	colors = {
-		background = "black",
-	},
-	window_background_image = "/Users/" .. os.getenv("USER") .. "/.config/wezterm/dystopian.jpg",
-	window_background_image_hsb = {
-		-- Darken the background image by reducing it to 1/3rd
-		brightness = 0.15,
-	},
 
 	keys = {
 		{
